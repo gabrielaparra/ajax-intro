@@ -23,7 +23,7 @@ $(document).ready(() => {
     postCharacterInfo(characterInfo);
   });
 
-  $('updateCharacterForm').submit((event) => {
+  $('#updateCharacterForm').submit((event) => {
     event.preventDefault();
 
     const updatedInfo = {
@@ -32,7 +32,7 @@ $(document).ready(() => {
       occupation: $('#updateCharacterWeapon').val(),
     };
 
-    const characterId = $('#updateCharacterId').val();
+    const characterId = $('#characterId').val();
 
     updateCharacter(characterId, updatedInfo);
   });
@@ -70,7 +70,7 @@ function postCharacterInfo(newCharacterDetails) {
 
 function updateCharacter(id, newInfo) {
   $.ajax({
-    url: 'https://ih-api.herokuapp.com/characters',
+    url: 'https://ih-api.herokuapp.com/characters/' + id,
     method: 'PATCH',
     data: newInfo,
     success: (responseFromApi) => {
