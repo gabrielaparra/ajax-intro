@@ -19,6 +19,37 @@
     <!-- this <ul> will be filled with JS -->
     <ul id="characterList"></ul>
 
+    <h3> Create a New Character </h3>
+    <form id="postCharacterForm">
+      <label for="postCharacterName"> Name </label>
+      <input id="postCharacterName" type="text" placeholder="Han Solo">
+      <br>
+      <label for="postCharacterWeapon"> Weapon </label>
+      <input id="postCharacterWeapon" type="text" placeholder="Blaster">
+      <br>
+      <label for="postCharacterOccupation"> Occupation </label>
+      <input id="postCharacterOccupation" type="text" placeholder="Smuggler">
+      <br>
+      <button> Save New Character </button>
+    </form>
+
+    <h3> Update a Character </h3>
+    <form id="updateCharacterForm">
+      <label for="updateCharacterId"> Character ID </label>
+      <input id="updateCharacterID" type="number" placeholder="123">
+      <br>
+      <label for="updateCharacterName"> Name </label>
+      <input id="updateCharacterName" type="text" placeholder="Han Solo">
+      <br>
+      <label for="updateCharacterWeapon"> Weapon </label>
+      <input id="updateCharacterWeapon" type="text" placeholder="Blaster">
+      <br>
+      <label for="updateCharacterOccupation"> Occupation </label>
+      <input id="updateCharacterOccupation" type="text" placeholder="Smuggler">
+      <br>
+      <button> Update Character </button>
+    </form>
+
     <script
       src="https://code.jquery.com/jquery-3.2.1.min.js"
       integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
